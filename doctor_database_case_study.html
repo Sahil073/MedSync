@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="case_study.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Doctor Dashboard</h1>
+
+    <section class="card">
+        <h2>View Appointment & Patient Details</h2>
+        <div id="appointmentDetails">
+            <!-- Details will appear here -->
+        </div>
+        <button onclick="loadAppointmentDetails()">Load Details</button>
+    </section>
+
+    <section class="card">
+        <h2>Submit Diagnosis and Prescription</h2>
+        <form id="diagnosisForm">
+            <input type="text" id="diagnosis" placeholder="Diagnosis" required>
+            <input type="text" id="prescription" placeholder="Prescription" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Update Medical History</h2>
+        <form id="historyForm">
+            <textarea id="medicalHistory" placeholder="Update Medical History" rows="4" required></textarea>
+            <button type="submit">Update History</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Approve Lab Test Request</h2>
+        <div id="labTestRequests">
+            <!-- Requests will appear here -->
+        </div>
+    </section>
+</div>
+
+<script src="case_study.js"></script>
+</body>
+</html>
+
